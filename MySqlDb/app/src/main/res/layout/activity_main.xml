@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安卓直接访问MySQL数据库示例"
+        android:textSize="20sp"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"/>
+
+    <Button android:id="@+id/btn_query_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询数据数量"
+        android:textSize="20sp"
+        android:textColor="#673AB7"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/tv_user_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据数量为："
+        android:textSize="20sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="焊接材料："
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:textSize="20sp"/>
+
+            <EditText android:id="@+id/et_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入焊接材料"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="焊接直径："
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:textSize="20sp"/>
+
+            <EditText android:id="@+id/et_diameter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入焊接直径"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="焊接方法："
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:textSize="20sp"/>
+
+            <EditText android:id="@+id/et_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入焊接方法"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="查询"
+            android:textSize="20sp"
+            android:textColor="#673AB7"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
